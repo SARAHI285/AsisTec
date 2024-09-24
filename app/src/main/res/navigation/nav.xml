@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/frgSplash">
+
+    <fragment
+        android:id="@+id/frgSplash"
+        android:name="com.hesarahi.asistec.frgSplash"
+        android:label="fragment_frg_splash"
+        tools:layout="@layout/fragment_frg_splash" >
+        <action
+            android:id="@+id/action_frgSplash_to_frgLogin"
+            app:destination="@id/frgLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgLogin"
+        android:name="com.hesarahi.asistec.frgLogin"
+        android:label="fragment_frg_login"
+        tools:layout="@layout/fragment_frg_login" >
+        <action
+            android:id="@+id/action_frgLogin_to_frgAutoRegistro"
+            app:destination="@id/frgAutoRegistro" />
+        <action
+            android:id="@+id/action_frgLogin_to_frgMenu"
+            app:destination="@id/frgMenu" />
+        <action
+            android:id="@+id/action_frgLogin_to_frgRecuperarContra"
+            app:destination="@id/frgRecuperarContra" />
+        <action
+            android:id="@+id/action_frgLogin_to_frgAcercaDe"
+            app:destination="@id/frgAcercaDe" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgAutoRegistro"
+        android:name="com.hesarahi.asistec.frgAutoRegistro"
+        android:label="fragment_frg_auto_registro"
+        tools:layout="@layout/fragment_frg_auto_registro" />
+    <fragment
+        android:id="@+id/frgMenu"
+        android:name="com.hesarahi.asistec.frgMenu"
+        android:label="fragment_frg_menu"
+        tools:layout="@layout/fragment_frg_menu" >
+        <action
+            android:id="@+id/action_frgMenu_to_frgConsulta"
+            app:destination="@id/frgConsulta" />
+        <action
+            android:id="@+id/action_frgMenu_to_frgPerfil"
+            app:destination="@id/frgPerfil" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgRecuperarContra"
+        android:name="com.hesarahi.asistec.frgRecuperarContra"
+        android:label="fragment_frg_recuperar_contra"
+        tools:layout="@layout/fragment_frg_recuperar_contra" />
+    <fragment
+        android:id="@+id/frgAcercaDe"
+        android:name="com.hesarahi.asistec.frgAcercaDe"
+        android:label="fragment_frg_acerca_de"
+        tools:layout="@layout/fragment_frg_acerca_de" />
+    <fragment
+        android:id="@+id/frgPerfil"
+        android:name="com.hesarahi.asistec.frgPerfil"
+        android:label="fragment_frg_perfil"
+        tools:layout="@layout/fragment_frg_perfil" />
+    <fragment
+        android:id="@+id/frgConsulta"
+        android:name="com.hesarahi.asistec.frgConsulta"
+        android:label="fragment_frg_consulta"
+        tools:layout="@layout/fragment_frg_consulta" />
+</navigation>
